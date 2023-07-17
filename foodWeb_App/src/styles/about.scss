@@ -1,0 +1,99 @@
+@import "colors";
+
+.about {
+    width: 100%;
+    background-color: $pink;
+
+    > main{
+        background-color: white;
+        max-width: 900px;
+        height: 100%;
+        margin: auto; 
+
+        > h1{
+            font : 500 3rem 'Montserrat';
+            color: $red;
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            background-color: $dark;
+        }
+
+        > article{
+
+            margin: 2rem 0;
+
+            > h4{
+                font: 100 2rem 'Montserrat';
+                text-transform: uppercase;
+                text-align: center;
+                padding: 2rem 0;
+            }
+
+            > p{
+                letter-spacing: 3px;
+                padding: 2rem;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+                word-spacing: 3px;
+            }
+
+            > a{
+                background-color: $dark;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                color: white;
+                transition: all 0.3s;
+                margin: auto;
+
+                &:hover{
+                    color: $red;
+                    transform: scale(1.1);
+
+                }
+            }
+        }
+
+        > div{
+            background-color: $dark;
+            padding: 2rem;
+            color: white;
+
+            > h2{
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            > article{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                > div{
+                    margin: 2rem;
+
+                    >img{
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 100%;
+                    }
+
+                    > h3{
+                        margin: 1rem;
+                    }
+                }
+                > p{
+                    margin: 0 1rem;
+                    width: 50px;
+                    line-height: 150%;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+    }
+}
